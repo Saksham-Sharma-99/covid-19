@@ -13,7 +13,7 @@ function contactsR(loc,number){
 }
 
 function helpLineNumbers(){
-  return makeReq("contacts")
+  return makeReq("contacts");
 }
 
 
@@ -29,12 +29,16 @@ function makeReq(endPoint){
       } else {
         data += chunk;
       }
-    });
+    })
 
     response.on("end", function() {
         const d=JSON.parse(data);
-        console.log(d.data.contacts);
-        
+        for(var i = 0 ; i<d.data.contacts.regional.length ; i++){
+          console.log(d.data.contacts.regional[i]);
+          contactsRegional.push(contactsR(d.data.contacts.regional[i].loc , d.data.contacts.regional[i].number));
+        }
+        console.log(contactsRegional);
+        return d.data.contacts.regional;
     });
   })
 }

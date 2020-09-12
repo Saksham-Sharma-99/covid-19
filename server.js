@@ -10,7 +10,7 @@ app.set("view engine" , "ejs");
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.get("/",function(req,res){
-  res.send("home");
+  res.render("home");
   var contacts = api.helpLineNumbers();
   console.log(contacts);
 });
