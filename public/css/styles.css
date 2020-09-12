@@ -4,3 +4,14 @@
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }	
+
+#home-img{
+	background-color: rgb(139, 214, 228);
+	height: 600px;
+	display: block;
+	
+}
+
+#home-head{
+	padding-top: 30%;
+}
