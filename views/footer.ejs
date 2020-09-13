@@ -9,19 +9,7 @@
 
 </footer> %>
 <script>
-  $(document).ready(function($){
-    var $el = $(".table-responsive");
-function anim() {
-  var st = $el.scrollTop();
-  var sb = $el.prop("scrollHeight")-$el.innerHeight();
-  $el.animate({scrollTop: st<sb/2 ? sb : 0}, 100000, anim);
-}
-function stop(){
-  $el.stop();
-}
-anim();
-$el.hover(stop, anim);
-  })
+  
 
 </script>
 </footer>
@@ -32,18 +20,7 @@ $el.hover(stop, anim);
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 <script src="scroll.js" type="text/javascript"></script>
-<script>
-  var $el = $(".table-responsive");
-function anim() {
-  var st = $el.scrollTop();
-  var sb = $el.prop("scrollHeight")-$el.innerHeight();
-  $el.animate({scrollTop: st<sb/2 ? sb : 0}, 4000, anim);
-}
-function stop(){
-  $el.stop();
-}
-anim();
-$el.hover(stop, anim);
+
 </script>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 <script src = "dashboard.js"></script>

@@ -1,11 +1,13 @@
-var $el = $(".table-responsive");
+$(document).ready(function($){
+  var $el = $(".table-responsive");
 function anim() {
-  var st = $el.scrollTop();
-  var sb = $el.prop("scrollHeight")-$el.innerHeight();
-  $el.animate({scrollTop: st<sb/2 ? sb : 0}, 1000, anim);
+var st = $el.scrollTop();
+var sb = $el.prop("scrollHeight")-$el.innerHeight();
+$el.animate({scrollTop: st<sb/2 ? sb : 0}, 100000, anim);
 }
 function stop(){
-  $el.stop();
+$el.stop();
 }
 anim();
 $el.hover(stop, anim);
+})
