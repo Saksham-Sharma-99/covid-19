@@ -31,8 +31,13 @@
 #home-img{
 	background-color: #3f72af;
 	height: 600px;
-	width: 100%;
+	display: block;
+	position: relative;
+
+
 }
 
 #home-head{
+	position:absolute;
+	margin-top: 300px;
 }
