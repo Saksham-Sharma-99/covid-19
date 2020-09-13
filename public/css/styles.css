@@ -5,6 +5,7 @@
 	.navbar .nav-item:hover .dropdown-menu{ display: block; }
 	.navbar .nav-item .dropdown-menu{ margin-top:0; }
 }
+
 #stateName{
 	text-align: center;
 	border-radius: 15px;
@@ -38,8 +39,20 @@
 }
 #home-head{
 	position:absolute;
-	margin-top: 300px;
+	margin-top: 20%;
 }
-.box{
-	background-color: red;
+.home-heading , .card-link{
+	color: #dbe2ef;
+}
+
+.container{
+	margin: auto;
+}
+.card{
+	background-color: #112d4e;
+	position: relative;
+	bottom: 40px;
+}
+.card-title , .card-text{
+	color : #f9f7f7;
 }
