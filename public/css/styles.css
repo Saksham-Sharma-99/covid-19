@@ -6,12 +6,16 @@
 }	
 
 #home-img{
-	background-color: rgb(139, 214, 228);
+	background-color: black;
 	height: 600px;
 	display: block;
+	position: relative;
+	
 	
 }
 
 #home-head{
-	padding-top: 30%;
+	position:absolute;
+	margin-top: 300px;
+	
 }
