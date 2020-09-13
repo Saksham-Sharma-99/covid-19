@@ -20,7 +20,8 @@ app.get("/", function(req, res) {
       res.render("home" , {
         tnumber : "1075",
         cnumber : pr[0].number,
-        email : pr[1].email
+        email : pr[1].email,
+        notifArray : n
       });
     });
   })
