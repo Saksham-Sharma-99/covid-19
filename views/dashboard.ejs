@@ -2,6 +2,7 @@
 <h1 class="stateName"><%=stateName%></h1>
 <div class="container">
   <div class="row">
+
     <div class="col-md-6">
       <div class="stateData" id="piechart1" style="width: 400px; height: 250px;"><%=hospitals%></div>
       <p class="stateData" id="uH" hidden><%=uH%></p>
@@ -14,15 +15,42 @@
       <p class="stateData" id="rB" hidden><%=rB%></p>
     </div>
 
-    
   </div>
-
 </div>
 
 
 <%#<p class = "stateData"></p>
   <p class = "stateData"></p>
   <p class = "stateData"></p> %>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 " id="sidebar">
+        <div class="table-responsive">
+          <table class="table table-hover">
+  <thead class="thead-dark">
+    <tr class="text-center">
+      <th scope="col">Name</th>
+      <th scope="col">City</th>
+      <th scope="col">Ownership</th>
+      <th scope="col">Admission Capacity</th>
+      <th scope="col">Hospital Beds</th>
+    </tr>
+  </thead>
+  <tbody class="text-center tableBody">
+    <%for(var i = 0 ; i < collegArr.length ; i++){%>
+      <tr>
+        <td><%=collegArr[i].name%></td>
+        <td><%=collegArr[i].city%></td>
+        <td><%=collegArr[i].ownership%></td>
+        <td><%=collegArr[i].admissionCapacity%></td>
+        <td><%=collegArr[i].hospitalBeds%></td>
+      </tr>
+    <%}%>
+  </tbody>
+</table>
+        </div>
+      </div>
+  </div>
 
 
 <%- include("footer") -%>

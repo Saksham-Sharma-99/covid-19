@@ -41,7 +41,7 @@ app.get("/dashboard",function(req,res){
   var urbanBeds = stateData.urbanBeds;
   var totalHospitals = stateData.totalHospitals;
   var totalBeds = stateData.totalBeds;
-  res.render("dashboard",{stateName : stateName,
+  res.render("dashboard",{stateName : stateName,collegArr:stateCollegeData,
                           hospitals: "Hospitals" , uH: urbanHospitals , rH : ruralHospitals,
                           hospitalBeds:"Hospital Beds",uB:urbanBeds , rB:ruralBeds});
 });
