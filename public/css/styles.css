@@ -117,25 +117,43 @@ footer{
 table{
 	  width:100%;
 }
+table::-webkit-scrollbar-thumb
+{
+    background-color: white;
+}
 
 td{
 	  padding:24px;
-	  background:#eee;
 }
-
 
 /* State Data */
 .stateName , .stateData{
 	margin-top: 20px;
 	text-align: center;
 }
-
 .table-responsive{
   overflow:scroll;
+	background-color: #dbe2ef;
 }
  thead tr:nth-child(1) th{
-    background: white;
+    background: #3f72af;
     position: sticky;
     top: 0;
     z-index: 10;
   }
+td, .date{
+	color:#8d93ab;
+	background-color: #dbe2ef;
+}
+th{
+	color:#dbe2ef;
+}
+
+
+
+
+/*notifs*/
+#notifs{
+	margin-top: 30px;
+	margin-bottom: 30px;
+}

@@ -13,10 +13,12 @@ app.use(bodyParser.urlencoded({
 }));
 
 //GET
+var notif;
 app.get("/", function(req, res) {
   api.getContacts(function(reg,pr){
     api.getNotifications(function(n){
       console.log(n);
+      notif = n;
       res.render("home" , {
         tnumber : "1075",
         cnumber : pr[0].number,
@@ -28,7 +30,7 @@ app.get("/", function(req, res) {
 });
 
 app.get("/notifs",function(req,res){
-  res.render("notifications");
+  res.render("notifications" ,{notifArray:notif});
 })
 
 var stateData;

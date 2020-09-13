@@ -1,4 +1,30 @@
 <%- include("header") -%>
-
+<%for(var i = 0 ; i<notifArray.length ; i++){%>
+<%if(i%2==0){%>
+<div class="container" id="notifs" style="text-align:left;">
+  <div class="row">
+    <div class="col-4">
+      <embed src=<%=notifArray[i].link%> width="300px" height="210px" />
+    </div>
+    <div class="col-8">
+      <small id="emailHelp" class="form-text date">  <%=notifArray[i].date%></small>
+      <p><%=notifArray[i].title%></p>
+    </div>
+  </div>
+</div>
+<%}else{%>
+<div class="container" id="notifs" style="text-align:right;">
+  <div class="row">
+    <div class="col-8">
+      <small id="emailHelp" class="form-text date">  <%=notifArray[i].date%></small>
+      <p><%=notifArray[i].title%></p>
+    </div>
+    <div class="col-4">
+      <embed src=<%=notifArray[i].link%> width="300px" height="210px" />
+    </div>
+  </div>
+</div>
+<%}%>
+<%}%>
 
 <%- include("footer") -%>
