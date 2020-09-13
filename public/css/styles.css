@@ -30,7 +30,11 @@
 
 /* Top Section */
 #home-img{
-	background-color: #3f72af;
+	/* background-color: #3f72af; */
+	background-image: url("images/covid-body.jpg");
+	background-size: cover;
+	
+	background-repeat: no-repeat;
 	height: 600px;
 	display: block;
 	position: relative;
@@ -47,12 +51,18 @@
 
 .container{
 	margin: auto;
+	
 }
 .card{
 	background-color: #112d4e;
 	position: relative;
-	bottom: 40px;
+	bottom: 60px;
+	margin: 10px;
+	text-align: center;
+	box-shadow: 7px 7px 5px  #3f72af;
 }
+
 .card-title , .card-text{
 	color : #f9f7f7;
+
 }
