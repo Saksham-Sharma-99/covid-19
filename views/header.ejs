@@ -9,32 +9,46 @@
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-    
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <a class="navbar-brand" href="#">Navbar</a>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-custom">
+            <a class="navbar-brand" href="#"> Navbar </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="main_nav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"> <a class="nav-link" href="#">Advisories</a> </li>
+                    <!-- <li class="nav-item"> <a class="nav-link" href="/notifs">Advisories</a> </li> -->
                     <li class="nav-item dropdown">
                         <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Dashboards</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-                            <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                            <!-- <li class = "dropdown-item"><<a class="dropdown-item" href="/hospitalsStats"> Hospitals Beds Stats </a></li> -->
+                            <li class = "dropdown-item">
+                              <form class="form-group" action="/dashboard" method="post">
+                                <label class="dropdown-label-head" for = "stateName"><!--<a class="dropdown-item" href="/hospitalsStats">--> Hospitals Beds Stats <!--</a>--></label>
+                                <input class = "form-control" id="stateName" type="text" name="stateName" placeholder="State Name ">
+                                <small id="emailHelp" class="form-text text-muted">See your state's current Hospital Stats</small>
+                              </form>
+                            </li>
+                            <!-- <li><a class="dropdown-item" href="/medicalColleges"> Medical College Stats </a></li> -->
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link  dropdown-toggle" href="#" data-toggle="dropdown">Helpline</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-                            <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
+                            <!-- <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
+                            <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li> -->
+                            <li class = "dropdown-item">
+                              <form class="form-group" action="/" method="post">
+                                <label class="dropdown-label-head" for = "stateName"><!--<a class="dropdown-item" href="/hospitalsStats">--> Emergency Contact Number <!--</a>--></label>
+                                <input class = "form-control" id="stateName" type="text" name="stateName" placeholder="State Name ">
+                              </form>
+                            </li>
                         </ul>
                     </li>
-                    <li class="nav-item"><a class="mr-3 nav-link" href="#" ><i class="fa fa-lg fa-facebook-f"></i></a></li>
-                    <li class="nav-item"><a class="mr-3 nav-link" href="#"><i class="fa fa-lg fa-instagram"></i></a></li>
+                    <li class="nav-item"> <a class="nav-link" href="/notifs">Advisories</a> </li>
+                    <li class="nav-item"><a class="mr-3 nav-link" href="https://www.facebook.com/MoHFWIndia" ><i class="fa fa-lg fa-facebook-f"></i></a></li>
+                    <li class="nav-item"><a class="mr-3 nav-link" href="https://twitter.com/MoHFW_INDIA"><i class="fa fa-lg fa-twitter"></i></a></li>
                 </ul>
             </div> <!-- navbar-collapse.// -->
-           
+
         </nav>
