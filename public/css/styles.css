@@ -6,7 +6,7 @@
 }
 
 #home-img{
-	background-color: black;
+	background-color: #3f72af;
 	height: 600px;
 	display: block;
 	position: relative;
@@ -38,5 +38,4 @@
 }
 .bg-custom{
 	background-color: #112d4e;
->>>>>>> saksham
 }
