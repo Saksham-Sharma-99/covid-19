@@ -80,3 +80,28 @@
 .footer-element{
 	color:white;
 }
+
+
+/* Sidebar homepage */
+
+#sidebar{
+
+		height: 500px;
+		
+}
+
+.table-responsive{
+	height:500px; 
+	width:100%;
+	overflow-y: auto;
+	margin-left: 0%;
+}
+  
+table{
+	  width:100%;
+}
+
+td{
+	  padding:24px; 
+	  background:#eee;
+}
