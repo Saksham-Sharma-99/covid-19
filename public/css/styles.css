@@ -1,3 +1,14 @@
+/* Colors */
+/*
+#dbe2ef
+#f9f7f7
+#3f72af
+#112d4e
+
+shadow #8d93ab
+*/
+
+
 /* Header */
 @media all and (min-width: 992px) {
 	.navbar .nav-item .dropdown-menu{ display: none; }

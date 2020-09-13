@@ -3,7 +3,7 @@ $(document).ready(function($){
 function anim() {
 var st = $el.scrollTop();
 var sb = $el.prop("scrollHeight")-$el.innerHeight();
-$el.animate({scrollTop: st<sb/2 ? sb : 0}, 100000, anim);
+$el.animate({scrollTop: st<sb/2 ? sb : 0}, 90000, anim);
 }
 function stop(){
 $el.stop();

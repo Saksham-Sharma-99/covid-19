@@ -62,15 +62,16 @@ function getContacts(callBack) {
 
 //notifications data
 var notifications = [];
-function notificationDetails(title, link) {
+function notificationDetails(title, link , date) {
   this.title = title;
   this.link = link;
+  this.date = date;
 }
 function getNotifications(callBack) {
   makeRequest("notifications", function(d) {
     notifications = [];
     for (var i = 1; i < d.data.notifications.length; i++) {
-      var item = new notificationDetails(d.data.notifications[i].title, d.data.notifications[i].link);
+      var item = new notificationDetails(d.data.notifications[i].title.slice(11), d.data.notifications[i].link , d.data.notifications[i].title.slice(0,10));
       notifications.push(item);
     }
     callBack(notifications);
