@@ -38,10 +38,6 @@ app.get("/dashboard",function(req,res){
 
 
 
-
-
-
-
 //POST
 app.post("/dashboard",function(req,res){
   console.log(req.body);

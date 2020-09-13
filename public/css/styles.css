@@ -33,7 +33,7 @@
 	/* background-color: #3f72af; */
 	background-image: url("images/covid-body.jpg");
 	background-size: cover;
-	
+
 	background-repeat: no-repeat;
 	height: 600px;
 	display: block;
@@ -49,7 +49,7 @@
 
 .container{
 	margin: auto;
-	
+
 }
 .card{
 	background-color: #112d4e;
@@ -57,7 +57,7 @@
 	bottom: 60px;
 	margin: 10px;
 	text-align: center;
-	box-shadow: 7px 7px 5px  #3f72af;
+	box-shadow: 7px 7px 5px  #8d93ab;
 }
 
 .card-title , .card-text{
