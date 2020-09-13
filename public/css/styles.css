@@ -72,11 +72,26 @@
 
 
 /* Footer */
-.footer{
+footer{
+	padding: 0;
 	background-color: #112d4e;
+	position: absolute;
+	left:0;
+	right:0;
+}
+.footer{
 	text-align: center;
-
+	margin: 0;
 }
 .footer-element{
 	color:white;
+}
+
+
+
+
+/* State Data */
+.stateName , .stateData{
+	margin-top: 20px;
+	text-align: center;
 }

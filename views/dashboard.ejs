@@ -1,4 +1,28 @@
 <%- include("header") -%>
+<h1 class="stateName"><%=stateName%></h1>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="stateData" id="piechart1" style="width: 400px; height: 250px;"><%=hospitals%></div>
+      <p class="stateData" id="uH" hidden><%=uH%></p>
+      <p class="stateData" id="rH" hidden><%=rH%></p>
+    </div>
+
+    <div class="col-md-6">
+      <div class="stateData" id="piechart2" style="width: 400px; height: 250px;"><%=hospitalBeds%></div>
+      <p class="stateData" id="uB" hidden><%=uB%></p>
+      <p class="stateData" id="rB" hidden><%=rB%></p>
+    </div>
+
+    
+  </div>
+
+</div>
+
+
+<%#<p class = "stateData"></p>
+  <p class = "stateData"></p>
+  <p class = "stateData"></p> %>
 
 
 <%- include("footer") -%>

@@ -31,9 +31,19 @@ app.get("/notifs",function(req,res){
 })
 
 var stateData;
+var stateCollegeData;
 app.get("/dashboard",function(req,res){
-  console.log(stateData);
-  res.render("dashboard");
+  // let data = JSON.parse(stateData.dashboardData)
+  var stateName = stateData.state;
+  var ruralHospitals = stateData.ruralHospitals;
+  var urbanHospitals = stateData.urbanHospitals;
+  var ruralBeds = stateData.ruralBeds;
+  var urbanBeds = stateData.urbanBeds;
+  var totalHospitals = stateData.totalHospitals;
+  var totalBeds = stateData.totalBeds;
+  res.render("dashboard",{stateName : stateName,
+                          hospitals: "Hospitals" , uH: urbanHospitals , rH : ruralHospitals,
+                          hospitalBeds:"Hospital Beds",uB:urbanBeds , rB:ruralBeds});
 });
 
 
@@ -41,15 +51,20 @@ app.get("/dashboard",function(req,res){
 //POST
 app.post("/dashboard",function(req,res){
   console.log(req.body);
+api.getCollegeDetails(lodash.kebabCase(req.body.stateName),function(collegeData){
+  stateCollegeData = collegeData;
+  console.log(stateCollegeData);
   api.getDashboardData(req.body.stateName,function(dashboardData){
     if(dashboardData === "nada"){
       alert("No such state exists in India");
       res.redirect("/");
     }else{
     stateData = dashboardData;
+    console.log(stateData);
     res.redirect("/dashboard");
   }
   })
+})
 });
 
 app.post("/",function(req,res){
