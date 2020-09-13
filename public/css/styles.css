@@ -29,12 +29,15 @@
 
 
 /* Top Section */
-#home-img{
-	/* background-color: #3f72af; */
+#bg{
 	background-image: url("images/covid-body.jpg");
 	background-size: cover;
 
 	background-repeat: no-repeat;
+}
+#home-img{
+	/* background-color: #3f72af; */
+	padding: 0px;
 	height: 600px;
 	display: block;
 	position: relative;
@@ -72,10 +75,7 @@
 .footer{
 	background-color: #112d4e;
 	text-align: center;
-	position: absolute;
-	bottom: 0;
-	left: 0;
-	right: 0;
+
 }
 .footer-element{
 	color:white;
