@@ -72,10 +72,16 @@
 
 
 /* Footer */
-.footer{
+footer{
+	padding: 0;
 	background-color: #112d4e;
+	position: absolute;
+	left:0;
+	right:0;
+}
+.footer{
 	text-align: center;
-
+	margin: 0;
 }
 .footer-element{
 	color:white;
@@ -87,21 +93,28 @@
 #sidebar{
 
 		height: 500px;
-		
+
 }
 
 .table-responsive{
-	height:500px; 
+	height:500px;
 	width:100%;
 	overflow-y: auto;
 	margin-left: 0%;
 }
-  
+
 table{
 	  width:100%;
 }
 
 td{
-	  padding:24px; 
+	  padding:24px;
 	  background:#eee;
+}
+
+
+/* State Data */
+.stateName , .stateData{
+	margin-top: 20px;
+	text-align: center;
 }
