@@ -24,13 +24,15 @@ app.get("/", function(req, res) {
       });
     });
   })
-
-
 });
+
 app.get("/notifs",function(req,res){
   res.render("notifications");
 })
-app.get("/dashboard/:name",function(req,res){
+
+var stateData;
+app.get("/dashboard",function(req,res){
+  console.log(stateData);
   res.render("dashboard");
 });
 
@@ -44,8 +46,13 @@ app.get("/dashboard/:name",function(req,res){
 app.post("/dashboard",function(req,res){
   console.log(req.body);
   api.getDashboardData(req.body.stateName,function(dashboardData){
-    console.log(dashboardData);
-    res.redirect("/dashboard/"+lodash.kebabCase(req.body.stateName))
+    if(dashboardData === "nada"){
+      alert("No such state exists in India");
+      res.redirect("/");
+    }else{
+    stateData = dashboardData;
+    res.redirect("/dashboard");
+  }
   })
 });
 

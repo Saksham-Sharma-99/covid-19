@@ -102,8 +102,10 @@ function getDashboardData(stateName , callback){
     for(var i = 0 ; i< regionalHospitals.length ; i++){
       if (lodash.kebabCase(stateName) ===lodash.kebabCase(regionalHospitals[i].state)){
         callback(regionalHospitals[i]);
+        return;
       }
     }
+    callback("nada");
   })
 }
 
