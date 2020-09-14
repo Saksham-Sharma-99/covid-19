@@ -44,11 +44,13 @@ google.charts.setOnLoadCallback(drawChart);
 
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
-          ['Year', 'Sales', 'Expenses'],
-          ['30/01/2020',  1000,      400],
-          ['03/02/2020',  1170,      460],
-          ['2006',  660,       1120],
-          ['2007',  1030,      540]
+          ['Date', 'Hospitalized', 'Recovered', 'Deceased'],
+          ['30/01/2020',  document.getElementById("d1h").textContent, document.getElementById("d1r").textContent, document.getElementById("d1d").textContent],
+          ['03/02/2020',  document.getElementById("d2h").textContent, document.getElementById("d2r").textContent, document.getElementById("d2d").textContent],
+          ['04/03/2020',  document.getElementById("d3h").textContent, document.getElementById("d3r").textContent, document.getElementById("d3d").textContent],
+          ['24/03/2020',  document.getElementById("d4h").textContent, document.getElementById("d4r").textContent, document.getElementById("d4d").textContent],
+          ['07/04/2020',  document.getElementById("d5h").textContent, document.getElementById("d5r").textContent, document.getElementById("d5d").textContent],
+          ['24/04/2020',  document.getElementById("d6h").textContent, document.getElementById("d6r").textContent, document.getElementById("d6d").textContent],
         ]);
 
         var options = {
@@ -61,3 +63,9 @@ google.charts.setOnLoadCallback(drawChart);
 
         chart.draw(data, options);
       }
+
+
+      //1000 document.getElementById("d1h").textContent
+      //400 document.getElementById("d1r")
+      ///document.getElementById("d1d")
+      ///
