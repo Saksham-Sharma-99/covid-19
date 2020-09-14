@@ -31,7 +31,30 @@ app.get("/", function(req, res) {
         cnumber: pr[0].number,
         email: pr[1].email,
         notifArray: n,
-        sN : "India"
+        sN : "India",
+        d1h:filteredData[0].dh,
+        d1r:filteredData[0].dr,
+        d1d:filteredData[0].dd,
+
+        d2h:filteredData[1].dh,
+        d2r:filteredData[1].dr,
+        d2d:filteredData[1].dd,
+        
+        d3h:filteredData[2].dh,
+        d3r:filteredData[2].dr,
+        d3d:filteredData[2].dd,
+        
+        d4h:filteredData[3].dh,
+        d4r:filteredData[3].dr,
+        d4d:filteredData[3].dd,
+        
+        d5h:filteredData[4].dh,
+        d5r:filteredData[4].dr,
+        d5d:filteredData[4].dd,
+        
+        d6h:filteredData[5].dh,
+        d6r:filteredData[5].dr,
+        d6d:filteredData[5].dd,
       });
     });
   })
