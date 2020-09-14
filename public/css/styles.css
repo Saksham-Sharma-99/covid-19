@@ -28,6 +28,15 @@ body{
 	margin: 0 10px 0 10px;
 }
 
+.nav-link:hover{
+	transform: scaleX(1.2) scaleY(1.2);
+}
+
+.navbar-brand:hover{
+	transform: scaleX(1.2) scaleY(1.2);
+}
+
+
 #stateName{
 	text-align: center;
 	border-radius: 15px;
@@ -83,6 +92,12 @@ body{
 	margin: 10px;
 	text-align: center;
 	box-shadow: 7px 7px 5px  #8d93ab;
+	width: 18rem;
+}
+
+.card:hover{
+	transform: scaleX(1.2) scaleY(1.2);
+
 }
 
 .card-title , .card-text{
