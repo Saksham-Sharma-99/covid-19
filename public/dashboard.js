@@ -19,6 +19,7 @@ function drawChart1() {
   chart.draw(data, options);
 }
 
+
 google.charts.setOnLoadCallback(drawChart2);
 function drawChart2() {
 
@@ -37,3 +38,26 @@ function drawChart2() {
 
   chart.draw(data, options);
 }
+
+
+google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Sales', 'Expenses'],
+          ['30/01/2020',  1000,      400],
+          ['03/02/2020',  1170,      460],
+          ['2006',  660,       1120],
+          ['2007',  1030,      540]
+        ]);
+
+        var options = {
+          title: document.getElementById("sN").textContent,
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
